@@ -91,7 +91,7 @@ function App() {
   const [actionMessage, setActionMessage] = useState('');
   const [actionStatus, setActionStatus] = useState<Record<string, string>>({});
   const [teamRuleInput, setTeamRuleInput] = useState(defaultRule);
-  const [apiUrl, setApiUrl] = useState(() => localStorage.getItem('review-api-url') || 'http://localhost:8000');
+  const [apiUrl, setApiUrl] = useState(() => localStorage.getItem('review-api-url') || 'https://code-review-agent-3-82in.onrender.com');
   const [apiUrlDraft, setApiUrlDraft] = useState(apiUrl);
   const [defaultLanguage, setDefaultLanguage] = useState(() => localStorage.getItem('default-language') || 'python');
   const [demoMode, setDemoMode] = useState(() => localStorage.getItem('demo-mode') !== 'false');
